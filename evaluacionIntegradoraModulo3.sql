@@ -27,7 +27,6 @@ CREATE TABLE IF NOT EXISTS Transaccion (
     FOREIGN KEY (CURRENCY_id) REFERENCES Moneda(currency_id)
 );
 
-
 --
 /*Poblado de Tablas */
 --
@@ -57,7 +56,6 @@ INSERT INTO Transaccion (sender_user_id, receiver_user_id, CURRENCY_id, importe)
 (1, 3, 2, 40.00), -- Juan Pérez envía €40 a Sofía Gómez
 (4, 2, 1, 75.00), -- Ana Martínez envía $75 a María García
 (5, 3, 3, 20.50); -- Luis Rodríguez envía MXN 20.50 a Sofía Gómez
-
 
 
 --
